@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Book from './Book';
 
 class BookList extends Component {
     state = {
@@ -34,12 +35,7 @@ class BookList extends Component {
         console.log(3)
         return (
             <div>
-                 {this.state.books.map((book, index) => {
-                    return (
-                        <div key={book.isbn} >{book.title}</div>
-                    )
-                })
-            }
+                 {this.state.books.map((book, index) => <Book book={book}  key={index}/>)}
              </div>
         );
     }
