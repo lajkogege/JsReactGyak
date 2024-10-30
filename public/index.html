@@ -1,43 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meghatározza a karakterkódolást az oldalhoz, jelen esetben UTF-8-at -->
     <meta charset="utf-8" />
+
+    <!-- Favicon ikon hozzáadása az oldalhoz, amely a %PUBLIC_URL%/favicon.ico helyen található -->
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <!-- A viewport beállítása a reszponzív megjelenés érdekében, hogy jól nézzen ki mobil eszközökön is -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Beállítja a böngésző sávjának színét mobil eszközökön -->
     <meta name="theme-color" content="#000000" />
+
+    <!-- Leírást ad az oldalról, amely megjelenhet a keresőmotorok találatai között -->
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    <!-- Apple ikon hozzáadása, amely akkor jelenik meg, ha az oldal hozzáadásra kerül a kezdőképernyőhöz iOS-en -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <!-- Web App manifest fájl hozzáadása, amely információkat tartalmaz a webalkalmazásról (ikonok, elindítás módja stb.) -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Az oldal címe, amely a böngészőfülön jelenik meg -->
     <title>React App</title>
   </head>
   <body>
+    <!-- Figyelmeztetés jelenik meg, ha a JavaScript le van tiltva, mivel a React alkalmazások futtatásához JavaScript szükséges -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <!-- A `root` ID-jú div, amely az alkalmazás gyökéreleme; a React alkalmazás ezen belül kerül megjelenítésre -->
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
